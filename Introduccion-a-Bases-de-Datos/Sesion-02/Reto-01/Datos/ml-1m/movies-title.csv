@@ -1,0 +1,18 @@
++------+----------+--------+--------+-------+
+| id   | genero   | edad   | ocup   | cp    |
+|------+----------+--------+--------+-------|
+| 1    | F        | 1      | 10     | 48067 |
+| 2    | M        | 56     | 16     | 70072 |
++------+----------+--------+--------+-------+
+mysql root@ec2-34-216-55-161.us-west-2.compute.amazonaws.com:hayde> SELECT edad, count(edad) as rango_edad FROM users GROUP BY edad ORDER BY rango_edad; 
+"edad","rango_edad"
+"1","222"
+"56","380"
+"50","496"
+"45","550"
+"18","1103"
+"35","1193"
+"25","2096"
+mysql root@ec2-34-216-55-161.us-west-2.compute.amazonaws.com:hayde> \T psql
+mysql root@ec2-34-216-55-161.us-west-2.compute.amazonaws.com:hayde> system ls
+mysql root@ec2-34-216-55-161.us-west-2.compute.amazonaws.com:hayde> notee
